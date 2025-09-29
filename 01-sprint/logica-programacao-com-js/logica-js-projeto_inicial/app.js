@@ -2,7 +2,7 @@
 
 alert("Boas vindas ao jogo do Número Secreto!");
 let numeroSecreto = 10;
-let chute 
+let chute;;
 console.log(numeroSecreto)
 
 //Enquanto o chute não for igual ao número secreto, o loop continua
