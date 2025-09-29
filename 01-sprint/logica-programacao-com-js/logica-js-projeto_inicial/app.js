@@ -2,13 +2,34 @@
 
 alert("Boas vindas ao jogo do Número Secreto!");
 let numeroSecreto = 10;
-let chute = prompt("Tente advinhar o número secreto entre 1 e 30!");
+let chute 
 console.log(numeroSecreto)
 
+//Enquanto o chute não for igual ao número secreto, o loop continua
+while(chute != numeroSecreto){
+    chute = prompt('Escolha um número entre 0 e 15:');
+    //se o chute for igual ao número secreto, o jogador vence
+    if(chute == numeroSecreto){
+        alert(`Parabéns! Você advinhou o número secreto ${numeroSecreto}!`);
+    }else{
+        if(chute > numeroSecreto){
+            alert(`O número secreto é menor que ${chute}! Tente novamente!`);
+        }else{
+            alert(`O número secreto é maior que ${chute}! Tente novamente!`);
+        }
+    }
+}
+
+
+/*
 if(chute == numeroSecreto){
     alert(`Parabéns! Você advinhou o número secreto ${numeroSecreto}!`);
 }else{
-    alert('você errou :(');
+    if(chute > numeroSecreto){
+        alert(`O número secreto é menor qu ${chute}! Tente novamente!`);
+    }else{
+        alert(`O número secreto é maior qu ${chute}! Tente novamente!`);
+    }
 }
 
 
