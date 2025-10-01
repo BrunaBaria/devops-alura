@@ -1,7 +1,8 @@
 // Projeto Inicial - Jogo do Número Secreto
 
 alert("Boas vindas ao jogo do Número Secreto!");
-let numeroSecreto = 10;
+let numeroMaximo = 5000
+let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1); //número aleatório entre 1 e 5000
 console.log(numeroSecreto)
 
 let chute;
@@ -9,10 +10,11 @@ let tentativas = 1;
 
 //Enquanto o chute não for igual ao número secreto, o loop continua
 while(chute != numeroSecreto){
-    chute = prompt('Escolha um número entre 0 e 15:');
+    chute = prompt(`Escolha um número entre 0 e ${numeroMaximo}:`);
     //se o chute for igual ao número secreto, o jogador vence
     if(chute == numeroSecreto){
-        alert(`Parabéns! Você advinhou o número secreto ${numeroSecreto} com ${tentativas} tentativas!`);
+        break;
+        //alert(`Parabéns! Você advinhou o número secreto ${numeroSecreto} com ${tentativas} tentativas!`);
     }else{
         if(chute > numeroSecreto){
             alert(`O número secreto é menor que ${chute}! Tente novamente!`);
@@ -24,6 +26,15 @@ while(chute != numeroSecreto){
     }
 }
 
+//operador ternário
+//condição ? valor1 : valor2
+let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+alert(`Parabéns! Você advinhou o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}!`);
+//if(tentativas > 1){
+//    alert(`Parabéns! Você advinhou o número secreto ${numeroSecreto} com ${tentativas} tentativas!`)
+//}else{
+//    alert(`Parabéns! Você advinhou o número secreto ${numeroSecreto} com ${tentativas} tentativas!`)
+//}
 
 /*
 if(chute == numeroSecreto){
