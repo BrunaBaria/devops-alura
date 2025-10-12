@@ -12,6 +12,7 @@ let tentativas = 1; //contador de tentativas
 function exibirTextoNaTela(tag,texto){ //função para exibir texto na tela
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
+    responsiveVoice.speak(texto,'Brazilian Portuguese Female',{rate: 1.2}); //adiciona a funcionalidade de voz
 }
 
 function exibirMensagemInicial(){ //função para exibir a mensagem inicial
