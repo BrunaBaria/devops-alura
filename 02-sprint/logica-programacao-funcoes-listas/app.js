@@ -4,7 +4,7 @@
 //let paragrafo = document.querySelector('p');
 //paragrafo.innerHTML = 'Descubra o número secreto entre 1 e 10!';
 
-let tamanhoDoJogo = 3; //define o tamanho do jogo, ou seja, o maior número possível
+let tamanhoDoJogo = 5; //define o tamanho do jogo, ou seja, o maior número possível
 let listaDeNumerosSortiados = []; //array para armazenar os números já sorteados
 let numeroAleatorio = gerarNumeroAleatorio(); //número aleatório entre 1 e tamanhoDoJogo
 let tentativas = 1; //contador de tentativas
