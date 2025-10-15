@@ -5,5 +5,6 @@ Veremos conceitos mais aprofundados de lógica de programação como listas, fun
 ## Pré-requisitos
 - Tenha o VSCode instalado (ou outra IDE da sua preferência)
 - Faça o clone [deste repositório](https://github.com/alura-cursos/logica-js/archive/refs/heads/projeto_inicial.zip)
-
 - Para publicar o projeto, utilize o [Vercel](https://vercel.com)
+
+## Acesse meu projeto publicado clicando [aqui](https://jogo-eta-green.vercel.app/)
