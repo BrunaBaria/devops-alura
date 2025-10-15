@@ -44,3 +44,12 @@
 
 /var → armazenamento de arquivos variáveis, como logs, filas de email e arquivos de spool.
 ```
+* sudo ls \root : sudo é super user do, é o admin - esse comando vai listar tudo que há no diretório root a nível de adminsitrador;
+* sudo -i: inicializa uma sessão como um super usuário pois não é possivel fazer navegação com cd, no sudo, pois muda o estado
+* ls -a: lista os arquivos ocultos do sistema
+* cat: (de concatenate) serve para exibir arquivos diretamente no terminal
+* cat sudoers : vai listar permissão dos usuarios
+* exit: logout
+  ```
+  sudo su: Abre uma sessão de shell como usuário root, mantendo o ambiente do usuário atual. Semelhante a sudo -i, mas mantém o ambiente do usuário.
+  ```
