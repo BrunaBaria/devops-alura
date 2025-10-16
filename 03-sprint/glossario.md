@@ -71,4 +71,38 @@ nano projeto_id.tx
 \\estamos dentro do editor
 \\popule o arquivo e ctrl + x para salvar
 ```
-www.Distrowatch.co - para acompanhar as distribuições do linux
+
+* mv: move - movimentar ou renomear um arquivo de um diretorio para outro. Esse comando precisa de 2 argumentos: 1) o caminho do arquivo que você quer movimentar; e 2) Destino desse arquivo
+```
+mkdir ideias
+ls
+mv /root/projeto_python/projeto_id.txt /root/projeto_python/ideias
+ls ./ideias
+```
+* ls -al: lista permissões
+  ```
+  drwxr
+  r é read
+  w write
+  x execute
+  4096 é o numero de bites - tamanho
+  
+  ```
+* cp : comando de cópia; esse comando também pede dois argumentos: 1) o que você quer copiar, 2) o nome do novo arquivo copiado;
+```
+cp projeto_id.txt projeto_id_v1.txt
+```  
+* ls --help: lista de comandos
+* help: lista de comandos de building do shell
+* rm: remove arquivos e diretorios - a remoção é permanente. Não existe um intermediário como a lixeira do window
+* rmdir: remove diretorios vazios
+* cd ./.. :voltar para o diretório anteriosr
+* rm -r : (remoção recursiva) remove diretorio que não está vazio
+* rm -ri: remoção recusriva iterativa: ele vai remover o diretorio perguntando se vc quer remover cada um dos item ali dentro
+* ls > lista_projeto.txt: vai criar um arquivo chamada lista_projeto.txt, e vai escrever nesse arquivo, o nome dos arquivos existentes dentro desse diretório. Sempre que você usá-lo, vai sobreescrever o arquivo
+* ls >> lista_projeto.txt: faz o mesmo acima, mas não sobrescreve acima
+* echo: escreve no terminal a sua mensagem digitada
+* sudo apt update: verifica se oa pacotes estão atualizados
+* sudo apt upgrade: para instalar os pacotes disponiveis para atualização listados com o comando anterior
+* sudo apt install python3: é o comando para instalar qualquer pacote, apenas substituir o "python3" pelo pacote desejado
+* sudo apt remove python3: remove o pacote
