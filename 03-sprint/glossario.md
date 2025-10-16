@@ -53,3 +53,22 @@
   ```
   sudo su: Abre uma sessão de shell como usuário root, mantendo o ambiente do usuário atual. Semelhante a sudo -i, mas mantém o ambiente do usuário.
   ```
+* mkdir : make directory - cria um diretório
+  ```
+  mkdir projeto_python
+  cd .\projeto_python
+  ls
+  ```
+* touch: criar um arquivo vazio
+  ```
+  touch projeto.txt
+  ls
+  \\ deve aparecer para você um arquivo .txt criado
+  ```
+Para escrever nesse arquivo .txt que está em branco, temos o editor de texto *nano* e o *vim*
+```
+nano projeto_id.tx
+\\estamos dentro do editor
+\\popule o arquivo e ctrl + x para salvar
+```
+www.Distrowatch.co - para acompanhar as distribuições do linux
